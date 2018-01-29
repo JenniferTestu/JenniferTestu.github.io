@@ -175,7 +175,7 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover;
   
-  background: BLUE;
+  background: WHITE;
   color: #6cacc5;
 }
 
@@ -183,6 +183,14 @@ canvas {
   position: absolute;
   top: 0px;
   left: 0px;
+
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header.masthead .intro-text {
