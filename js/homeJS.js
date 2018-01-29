@@ -69,10 +69,13 @@ var skyGrad;
 
 // render the stars
 function mainLoop(time) {
+	
+	var pw = document.getElementById('header').offsetWidth;
+	var ph = document.getElementById('header').offsetHeight;
   // resize canva if page size changes
-  if (canvas.width !== innerWidth || canvas.height !== innerHeight) {
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
+  if (canvas.width !== pw || canvas.height !== ph) {
+    canvas.width = pw;
+    canvas.height = ph;
     // create a new set of stars 
     stars.length = 0;
     // density is number of pixels one the canvas that has one star
