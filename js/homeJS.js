@@ -70,9 +70,9 @@ var skyGrad;
 // render the stars
 function mainLoop(time) {
   // resize canva if page size changes
-  if (canvas.width !== innerWidth || canvas.height !== innerHeight) {
+  if (canvas.width !== innerWidth || canvas.height !== 600) {
     canvas.width = innerWidth;
-    canvas.height = innerHeight;
+    canvas.height = 600;
     // create a new set of stars 
     stars.length = 0;
     // density is number of pixels one the canvas that has one star
@@ -98,7 +98,7 @@ function mainLoop(time) {
     
   }
   ctx.fillStyle = skyGrad;
-  ctx.fillRect(0, 0, canvas.width, 700);
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
   doFor(starCount, (i) => stars[i].draw());
 
   requestAnimationFrame(mainLoop);
