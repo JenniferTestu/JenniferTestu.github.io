@@ -98,7 +98,7 @@ function mainLoop(time) {
     
   }
   ctx.fillStyle = skyGrad;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillRect(0, 0, canvas.width, 700);
   doFor(starCount, (i) => stars[i].draw());
 
   requestAnimationFrame(mainLoop);
