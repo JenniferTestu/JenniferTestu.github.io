@@ -721,5 +721,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .list-icons {
   font-size: 3rem; }
-  .list-icons .list-inline-item i:hover {
-    color: #1D97F0; }
+.list-icons .list-inline-item i:hover {
+  color: #1D97F0; }
+
+#fac{
+opacity: 0.5;
+filter: alpha(opacity=50);}
