@@ -29,6 +29,12 @@ h6 {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.drapeaux{
+  width: 30px;
+  margin-left: 40px;
+
+}
+
 section {
   padding: 100px 0;
 }
